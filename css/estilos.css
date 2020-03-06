@@ -1,0 +1,132 @@
+body{
+  font-family: Dancing Script;
+  background-color:#82c3a6;
+}
+
+#ImagenPrincipal{
+  background-color:#82c3a6;
+}
+#Fotocentrada {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media (min-width: 900px){ /*Desktop*/
+.imgsec{
+  margin:0px;
+  padding:0px;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row;
+  -webkit-flex-flow: row;
+}
+.imgsec div{
+    width:50%;
+    background-color:#d5c75f;
+    border: 1px solid white;
+  }
+.imgsec div > img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  }
+header{
+  text-align: right;
+  border-radius: 10px 10px;
+  background-color:#5b7989;
+}
+  header > h1{
+    text-align: left;
+    color:white;
+    text-shadow: 2px #02010a;
+  }
+  #menu a{
+    text-decoration: none;
+    text-align: right;
+    margin-right: 30px;
+  }
+
+footer{
+ border-radius: 0px 0px 10px 10px;
+ background-color: #C5d5c5;
+ column-count: 4;
+  }
+}
+
+#FotoPaisaje{
+  border: 2px solid #82c3a6;
+}
+#FotoRetrato{
+  border: 2px solid #82c3a6;
+}
+img{
+  box-shadow: 2px 2px 2px 2px #02010a;
+}
+
+@media all and (max-width:900px){ /*Movil*/
+  footer{
+   border-radius: 0px 0px 10px 10px;
+   background-color: #C5d5c5;
+   column-count: 1;
+  }
+  header{
+    text-align: center;
+    border-radius: 10px 10px;
+    background-color:#5b7989;
+  }
+    header > h1{
+      text-align: center;
+      color:white;
+      text-shadow: 2px #02010a;
+    }
+
+  #menu a{
+    text-decoration: none;
+    text-align: center;
+    margin-right: 30px;
+  }
+}
+
+#FotoPaisaje{
+  transform:rotate(0deg);
+  -ms-transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+
+}
+#FotoPaisaje:hover{
+  transform:rotate(10deg);
+  -ms-transform:rotate(10deg);
+  -webkit-transform:rotate(10deg);
+}
+
+#FotoRetrato{
+  transform:translateX(0px)
+            translateY(0px);
+  -ms-transform:translateX(0px)
+                translateY(0px);
+  -webkit-transform:translateX(0px)
+                    translateY(0px);
+
+}
+#FotoRetrato:hover{
+  transform:translateX(5px)
+            translateY(-20px);
+  -ms-transform:translateX(5px)
+                translateY(-20px);
+  -webkit-transform:translateX(5px)
+                    translateY(-20px);
+}
+header{
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+  @keyframes slidein{
+    from{
+      margin-top: 150%;
+    }
+    to{
+      margin-top: 5%; 
+    }
+  }
